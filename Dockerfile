@@ -1,4 +1,6 @@
-FROM openjdk:17-jdk-slim
+# 1️⃣ 使用 OpenJDK 17 作为基础镜像（Temurin 版，官方推荐替代）
+FROM eclipse-temurin:17-jdk-jammy
+
 WORKDIR /app
 
 # 安装 wget
